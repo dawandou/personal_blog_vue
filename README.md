@@ -1,112 +1,93 @@
-# vue-admin-template
+# 个人博客管理系统
 
-> A minimal vue admin template with Element UI & axios & iconfont & permission control & lint
+## 1、介绍
+项目以个人网站为主题，采用前后端分离进行项目的搭建。现在企业大多数都是用Spring Boot + Mybatis搭建后台，我们也要紧跟发展，虽然现在大型的项目都是分布式Spring Cloud，但是我们还是以基础为主，等以后有经历了可以慢慢再深入学习。
 
-**Live demo:** http://panjiachen.github.io/vue-admin-template
+管理平台则使用框架vue-element-template进行搭建快速开发。最后会教大家项目上线等操作，大概也就那么多，后期做项目中，在遇到什么我再进行补充。项目二期的话就是使用uni-app进行移动端开发。手机端的展示，方便快捷。
 
-[中文文档](https://github.com/PanJiaChen/vue-admin-template/blob/master/README-zh.md)
+总的来说，这是一个前后端分离的小项目，采用的都是最基础的知识点，几乎没有太多的难点。我的初心是让大家大概了解做项目的流程，以及编写代码的流程和做项目的思想等。我能力有限，尽量把这个项目基础化，然后通俗的讲出来。俗话说，麻雀虽小，五脏俱全。但当个毕设、小项目练习足够了。个人水平有限，有很多说的可能不对，希望大家理解下，但总体的项目可以运行起来，大家多多点点关注，自豪的白嫖，哈哈！最后希望大家都能学到东西，一起进步。
 
-## Build Setup
+## 2、详细教程
 
-```bash
-# personal_vue
+**后端代码地址：**https://gitee.com/xyhwh/personal_blog
 
-#### Description
+**如何获得本教程：**
 
-个人博客管理系统前端
+我在微信公众号上发布了个人博客系统的全部开发教程，关注下方微信公众号，找到下方的项目教程即可。
 
-#### Software Architecture
+![msy](msy.png)
 
-Software architecture description
+**还可以通过CSDN上去查看本教程：[Spring Boot + vue-element 开发个人博客项目实战教程](https://blog.csdn.net/m0_37779600/article/details/120937543)**
 
-#### Installation
+## 3、软件架构
+
+### 3.1、后端技术
+
+| 技术 | 说明 | 官方网址 |
+| --- | --- | --- |
+| Spring Boot | MVC框架和容器 | [ https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot) |
+| MyBatis | 持久层框架 | [https://mybatis.org/mybatis-3/zh/index.html](https://mybatis.org/mybatis-3/zh/index.html) |
+| Swagger-UI | 文档生成工具 | [https://github.com/swagger-api/swagger-ui](https://github.com/swagger-api/swagger-ui) |
+| Lombok | 简化对象封装工具 | [https://github.com/rzwitserloot/lombok](https://github.com/rzwitserloot/lombok) |
+| PageHelper | MyBatis物理分页插件 | [http://git.oschina.net/free/Mybatis_PageHelper](http://git.oschina.net/free/Mybatis_PageHelper) |
+| Hutool | Java工具类库 | [https://github.com/looly/hutool](https://github.com/looly/hutool) |
+| Shiro | Java安全框架 | [https://shiro.apache.org/](https://shiro.apache.org/) |
+
+### 3.2、前端技术
+
+| 技术 | 说明 | 官方网址 |
+| --- | --- | --- |
+| Vue | 前端框架 | [ https://vuejs.org/](https://vuejs.org/) |
+| vue-element-template | 后台前端解决方案 | https://github.com/PanJiaChen/vue-admin-template |
+| vue-router | 路由管理器 | [https://router.vuejs.org/zh/](https://router.vuejs.org/zh/) |
+| vue-cli | Vue.js 开发的标准工具 | [https://cli.vuejs.org/zh/](https://cli.vuejs.org/zh/) |
+
+### 3.3、开发工具
+
+| 工具名 | 说明 | 官方网址 |
+| --- | --- | --- |
+| IntelliJ IDEA 2021.03 | 后端主要开发工具 | [https://www.jetbrains.com/idea/download](https://www.jetbrains.com/idea/download) |
+| Navicat | 数据库连接管理工具 | [http://www.formysql.com/xiazai.html](http://www.formysql.com/xiazai.html) |
+| Postman | API接口调试工具 | [ https://www.postman.com/](https://www.postman.com/) |
+| Xshell | Linux远程连接工具 | [https://www.netsarang.com/zh/xshell-download/](https://www.netsarang.com/zh/xshell-download/) |
+| Xftp | 网络传输文件 | [https://www.netsarang.com/zh/xftp-download/](https://www.netsarang.com/zh/xftp-download/) |
+| Visual Studio Code | 免费开源的现代化轻量级代码编辑器 | [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download) |
+| Typora | Markdown编辑器 | [https://typora.io/](https://typora.io/) |
+
+### 3.4、开发环境
+
+| 工具名 | 说明/版本号 | 官方网址 |
+| --- | --- | --- |
+| JDK | 软件开发工具包/1.8 | [https://www.oracle.com/java/technologies/downloads/#java8-windows](https://www.oracle.com/java/technologies/downloads/#java8-windows) |
+| Mysql | 数据库管理系统/8.1 | [https://www.mysql.com/downloads/](https://www.mysql.com/downloads/) |
+| Redis | 非关系型数据库/3.2.100 | [https://redis.io/download](https://redis.io/download) |
+
+
+## 4、安装教程
+
+1.  
+2.  xxxx
+3.  xxxx
+
+#### 使用说明
 
 1.  xxxx
 2.  xxxx
 3.  xxxx
 
-#### Instructions
+#### 参与贡献
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Contribution
-
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+1.  Fork 本仓库
+2.  新建 Feat_xxx 分支
+3.  提交代码
+4.  新建 Pull Request
 
 
-#### Gitee Feature
+#### 特技
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
-```
-
-## Demo
-
-![demo](https://github.com/PanJiaChen/PanJiaChen.github.io/blob/master/images/demo.gif)
-
-## Extra
-
-If you want router permission && generate menu by user roles , you can use this branch [permission-control](https://github.com/PanJiaChen/vue-admin-template/tree/permission-control)
-
-This project is based on `webpack4` development. If you want to use `webpack3` development, please use this branch [webpack3](https://github.com/PanJiaChen/vue-admin-template/tree/webpack3)
-
-For `typescript` version, you can use [vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template) (Credits: [@Armour](https://github.com/Armour))
-
-## Related Project
-
-[vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
-
-[electron-vue-admin](https://github.com/PanJiaChen/electron-vue-admin)
-
-[vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template)
-
-### Element-Ui using cdn tutorial
-
-First find `index.html`([root directory](https://github.com/PanJiaChen/vue-admin-template/blob/element-ui-cdn/index.html))
-
-Import css and js of `Element`, and then import vue. Because `Element` is vue-dependent, vue must be import before it.
-
-Then find [webpack.base.conf.js](https://github.com/PanJiaChen/vue-admin-template/blob/element-ui-cdn/build/webpack.base.conf.js)
-Add `externals` to make webpack not package vue and element.
-
-```
-externals: {
-  vue: 'Vue',
-  'element-ui':'ELEMENT'
-}
-```
-
-Finally there is a small detail to pay attention to that if you import vue in global, you don't need to manually `Vue.use(Vuex)`, it will be automatically mounted, see
-[issue](https://github.com/vuejs/vuex/issues/731)
-
-And you can use `npm run build --report` to see the effect
-
-Pictured:
-![demo](https://panjiachen.github.io/images/element-cdn.png)
-
-**[Detailed code](https://github.com/PanJiaChen/vue-admin-template/commit/746aff560932704ae821f82f10b8b2a9681d5177)**
-
-**[Branch](https://github.com/PanJiaChen/vue-admin-template/tree/element-ui-cdn)**
-
-## Browsers support
-
-Modern browsers and Internet Explorer 10+.
-
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
-| --------- | --------- | --------- | --------- |
-| IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
-
-## License
-
-[MIT](https://github.com/PanJiaChen/vue-admin-template/blob/master/LICENSE) license.
-
-Copyright (c) 2017-present PanJiaChen
+1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
+2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
+3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
+4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
+5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
+6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
