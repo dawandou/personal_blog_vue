@@ -30,3 +30,11 @@ export function deleteTag(id) {
     method: 'delete',
   })
 }
+
+export function getTag(data) {
+  return request({
+    url: '/tag/selectTag',
+    method: 'post',
+    data
+  })
+}

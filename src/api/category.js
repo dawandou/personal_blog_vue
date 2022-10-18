@@ -31,3 +31,11 @@ export function deleteCategory(id) {
     params: { id }
   })
 }
+
+export function getCategory(data) {
+  return request({
+    url: '/category/getCategory',
+    method: 'post',
+    data
+  })
+}

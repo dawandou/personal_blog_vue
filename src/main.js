@@ -18,6 +18,7 @@ import 'mavon-editor/dist/css/index.css'
 import '@/icons' // icon
 import '@/permission' // permission control
 
+
 /**
  * This project originally used easy-mock to simulate data,
  * but its official service is very unstable,
@@ -34,6 +35,7 @@ Vue.use(mavonEditor);
 
 
 Vue.config.productionTip = false
+
 
 new Vue({
   el: '#app',

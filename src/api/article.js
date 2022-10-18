@@ -38,3 +38,11 @@ export function getArticleById(id){
     method: 'get'
   })
 }
+
+export function uploadImg(data) {
+  return request({
+    url: '/article/upload',
+    method: 'post',
+    data
+  })
+}
