@@ -98,8 +98,8 @@ export default {
 </script>
 
 <style rel="stylesheet/scss" lang="scss">
-$bg:#2d3a4b;
-$light_gray:#eee;
+$bg:#889aa4;
+$light_gray:#eaeaea;
 
 /* reset element-ui css */
 .login-container {
@@ -113,11 +113,11 @@ $light_gray:#eee;
       -webkit-appearance: none;
       border-radius: 0px;
       padding: 12px 5px 12px 15px;
-      color: $light_gray;
+      color: black;
       height: 47px;
       &:-webkit-autofill {
         -webkit-box-shadow: 0 0 0px 1000px $bg inset !important;
-        -webkit-text-fill-color: #fff !important;
+        -webkit-text-fill-color: black !important;
       }
     }
   }
@@ -132,14 +132,17 @@ $light_gray:#eee;
 </style>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
-$bg:#2d3a4b;
+$bg:#889aa4;
 $dark_gray:#889aa4;
 $light_gray:#eee;
 .login-container {
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: $bg;
+  background:url("../../assets/bj.jpg");
+  position:fixed;
+  background-size:100% 100%;
+  // background-image: "../../assets/bg.jpg";
   .login-form {
     position: absolute;
     left: 0;
@@ -167,9 +170,8 @@ $light_gray:#eee;
     display: inline-block;
   }
   .title {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 400;
-    color: $light_gray;
     margin: 0px auto 40px auto;
     text-align: center;
     font-weight: bold;
@@ -183,5 +185,6 @@ $light_gray:#eee;
     cursor: pointer;
     user-select: none;
   }
+  
 }
 </style>

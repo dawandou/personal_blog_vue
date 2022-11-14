@@ -171,6 +171,8 @@ export default {
     const id = this.$route.params.id;
     if(id) {
       getArticleById(id).then((res) => {
+        
+        console.log(res.data)
         this.article = res.data;
       });
     }
@@ -231,6 +233,7 @@ export default {
             type: 'success',
             message: '保存草稿成功!'
           });
+          this.$router.push("/articles/list");
         } else {
           this.$message({
             type: 'error',
@@ -361,20 +364,23 @@ export default {
         this.$message.error("文章标签不能为空");
         return false;
       }
-
       var body = this.article;
       addArticle(body).then(res => {
         if(res.code === 200) {
-          this.$message({
-            type: 'success',
-            message: '文章发表成功!'
+          this.$notify({
+              title: "文章发表成功",
+              message: `文章《${this.article.title}》发表成功!`,
+              type: "success",
           });
+          this.$router.push("/articles/list");
         } else {
-          this.$message({
-            type: 'error',
-            message: '文章发表失败!'
+          this.$notify({
+              title: "文章发表失败",
+              message: `文章《${this.article.title}》发表失败！`,
+              type: "error",
           });
         }
+         this.showDialog = false;
       })
     },
     

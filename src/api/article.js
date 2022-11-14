@@ -27,14 +27,14 @@ export function updateArticle(data) {
 export function deleteArticle(id) {
   return request({
     url: '/article/delete',
-    method: 'post',
+    method: 'delete',
     params: { id }
   })
 }
 
 export function getArticleById(id){
   return request({
-    url: '/article/info/' + id,
+    url: '/article/getArticle/' + id,
     method: 'get'
   })
 }

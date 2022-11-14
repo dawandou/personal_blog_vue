@@ -3,19 +3,19 @@
 ## 1、介绍
 项目以个人网站为主题，采用前后端分离进行项目的搭建。现在企业大多数都是用Spring Boot + Mybatis搭建后台，我们也要紧跟发展，虽然现在大型的项目都是分布式Spring Cloud，但是我们还是以基础为主，等以后有经历了可以慢慢再深入学习。
 
-管理平台则使用框架vue-element-template进行搭建快速开发。最后会教大家项目上线等操作，大概也就那么多，后期做项目中，在遇到什么我再进行补充。项目二期的话就是使用uni-app进行移动端开发。手机端的展示，方便快捷。
+管理平台则使用框架vue-element-admin进行搭建快速开发。最后会教大家项目上线等操作，大概也就那么多，后期做项目中，在遇到什么我再进行补充。项目二期的话就是使用uni-app进行移动端开发。手机端的展示，方便快捷。
 
 总的来说，这是一个前后端分离的小项目，采用的都是最基础的知识点，几乎没有太多的难点。我的初心是让大家大概了解做项目的流程，以及编写代码的流程和做项目的思想等。我能力有限，尽量把这个项目基础化，然后通俗的讲出来。俗话说，麻雀虽小，五脏俱全。但当个毕设、小项目练习足够了。个人水平有限，有很多说的可能不对，希望大家理解下，但总体的项目可以运行起来，大家多多点点关注，自豪的白嫖，哈哈！最后希望大家都能学到东西，一起进步。
 
 ## 2、详细教程
 
-**后端代码地址：**https://gitee.com/xyhwh/personal_blog
+**后端代码地址**：[https://gitee.com/whxyh/personal_blog](https://gitee.com/whxyh/personal_blog)
 
 **如何获得本教程：**
 
 我在微信公众号上发布了个人博客系统的全部开发教程，关注下方微信公众号，找到下方的项目教程即可。
 
-![msy](msy.png)
+![msy](img/msy.png)
 
 **还可以通过CSDN上去查看本教程：[Spring Boot + vue-element 开发个人博客项目实战教程](https://blog.csdn.net/m0_37779600/article/details/120937543)**
 
@@ -62,32 +62,71 @@
 | Mysql | 数据库管理系统/8.1 | [https://www.mysql.com/downloads/](https://www.mysql.com/downloads/) |
 | Redis | 非关系型数据库/3.2.100 | [https://redis.io/download](https://redis.io/download) |
 
+## 4、使用说明
 
-## 4、安装教程
+### 4.1、初始化
 
-1.  
-2.  xxxx
-3.  xxxx
+```vue
+npm nstall
+```
 
-#### 使用说明
+### 4.2、启动
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+```vue
+npm run dev
+```
 
-#### 参与贡献
+## 5、项目展示
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+**登录页面**：
+
+![1](img/1.png)
 
 
-#### 特技
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+![1](img/2.png)
+
+
+
+![1](img/3.png)
+
+
+
+![1](img/4.png)
+
+
+
+![1](img/5.png)
+
+
+
+![1](img/6.png)
+
+
+
+![1](img/7.png)
+
+
+
+![1](img/8.png)
+
+
+
+![1](img/9.png)
+
+
+
+![1](img/10.png)
+
+
+
+![1](img/11.png)
+
+
+
+![1](img/12.png)
+
+
+
+![1](img/13.png)
+
