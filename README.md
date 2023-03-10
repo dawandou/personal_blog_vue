@@ -4,7 +4,7 @@
 
 ## 1、详细教程
 
-**后端代码地址**：[https://gitee.com/whxyh/personal_blog](https://gitee.com/whxyh/personal_blog)
+**后端代码地址**：[https://github.com/dawandou/personal_blog_pro](https://github.com/dawandou/personal_blog_pro)
 
 **如何获得本教程：**
 
