@@ -5,6 +5,7 @@
 <script>
 import * as echarts from 'echarts'
 require('echarts/theme/macarons') // echarts theme
+import { getWeekArticleCount } from '@/api/index'
 
 
 export default {
@@ -22,16 +23,28 @@ export default {
       default: '300px'
     }
   },
+
   data() {
     return {
-      chart: null
+      chart: null,
+      list: [],
     }
   },
+
   mounted() {
-    this.$nextTick(() => {
-      this.initChart()
+    getWeekArticleCount().then(res => {
+        if(res.code === 200) {
+          this.list = res.data;
+          this.initChart();
+        } else {
+            this.$message({
+              type: 'error',
+              message: res.msg
+            });
+        }
     })
   },
+
   beforeDestroy() {
     if (!this.chart) {
       return
@@ -62,7 +75,7 @@ export default {
         xAxis: [
           {
             type: 'category',
-            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            data: this.list.map(item => item.date),
             axisTick: {
               alignWithLabel: true
             }
@@ -75,10 +88,10 @@ export default {
         ],
         series: [
           {
-            name: 'Direct',
+            name: '文章数',
             type: 'bar',
             barWidth: '60%',
-            data: [10, 52, 200, 334, 390, 330, 220]
+            data: this.list.map(item => item.count)
           }
         ]
         

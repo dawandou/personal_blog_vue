@@ -4,6 +4,8 @@
 
 <script>
 import * as echarts from 'echarts'
+import { getTagCount } from '@/api/index'
+
 require('echarts/theme/macarons') // echarts theme
 
 
@@ -24,12 +26,28 @@ export default {
   },
   data() {
     return {
-      chart: null
+      chart: null,
+      list: []
     }
   },
   mounted() {
-    this.$nextTick(() => {
-      this.initChart()
+    getTagCount().then(res => {
+        if(res.code === 200) {
+          var getData = [];
+          for(let i = 0; i < res.data.length; i++) {
+            var obj = new Object();
+            obj.name = res.data[i].tagName;
+            obj.value = res.data[i].tagCount;
+            getData[i] = obj;
+          }
+          this.list = getData;
+          this.initChart();
+        } else {
+            this.$message({
+              type: 'error',
+              message: res.msg
+            });
+        }
     })
   },
   beforeDestroy() {
@@ -39,13 +57,14 @@ export default {
     this.chart.dispose()
     this.chart = null
   },
+
   methods: {
     initChart() {
       this.chart = echarts.init(this.$el, 'macarons')
 
       this.chart.setOption({
         title: {
-            text: '分类占比',
+            text: '文章标签占比',
             left: 'left'
         },
         tooltip: {
@@ -53,16 +72,9 @@ export default {
         },
         series: [
             {
-            name: 'Access From',
             type: 'pie',
             radius: '50%',
-            data: [
-                { value: 1048, name: 'Search Engine' },
-                { value: 735, name: 'Direct' },
-                { value: 580, name: 'Email' },
-                { value: 484, name: 'Union Ads' },
-                { value: 300, name: 'Video Ads' }
-            ],
+            data: this.list,
             emphasis: {
                 itemStyle: {
                 shadowBlur: 10,

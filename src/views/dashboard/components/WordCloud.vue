@@ -7,13 +7,15 @@
         @click="getDataInfo(item)"
         :style="{color:item.color,background:item.bgColor}"
       >
-        {{ item.name }}
+        {{ item.tagName }}
       </span>
     </div>
   </section>
 </template>
  
 <script>
+import { getWordCloud } from '@/api/index'
+
   export default {
     name: "word-cloud",
     data() {
@@ -101,10 +103,29 @@
         this.initWordCloud()
       })
     },
+
+    created() {
+      this.getWordCloudInfo();
+    },
+
     beforeDestroy () {
       clearInterval(this.timer)
     },
+
     methods:{
+      getWordCloudInfo() {
+        getWordCloud().then(res => {
+          if(res.code === 200) {
+              this.dataList = res.data;
+          } else {
+                this.$message({
+                    type: 'error',
+                    message: res.msg
+                });
+            }
+        })
+      },
+
       // 获取点击文本信息
       getDataInfo (item) {
         console.log(item, 'item')
